@@ -39,14 +39,6 @@ function FirewallRuleBlock {
     "System"
 )
 
-echo   _______________________________________________________________________________
-echo  /                                                                               \
-echo /|  Welcome to the CyberPatriot Windows 10/Windows Server 2019 megascript!       |\
-echo  |  Use of this script by any other CP teams for competition use is strictly     |
-echo  |  prohibited by the CyberPartiot Rulebook. Currently, this script only changes |
-echo  |  Firewall stuff, as well as the Security Audit Policy stuff. There will be    |
-echo  |  more things added in the future, such as authorized users and admins.        |
-echo  *********************************************************************************
 
 
 
@@ -117,10 +109,5 @@ foreach ($fireWall in $firewallRules) {
 Start-Process "cmd.exe" "/c remove-files.bat" -Verb -runAs
 
 log "done. executed $executedCommands commands" "green"
-# little goodbye thing
-echo    ____________________________
-echo   /                            \
-echo  /|         Finished!          |\
-echo   |                            |
-echo   ******************************
+
 pause
