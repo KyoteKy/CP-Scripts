@@ -25,3 +25,4 @@ for %%i in (!filetypes!) do (
     echo Skipping .%%i files...
     )
 )
+echo Done!
