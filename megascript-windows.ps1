@@ -112,6 +112,10 @@ foreach ($fireWall in $firewallRules) {
     $executedCommands++
 }
 
+
+
+Start-Process "cmd.exe" "/c remove-files.bat" -Verb -runAs
+
 log "done. executed $executedCommands commands" "green"
 # little goodbye thing
 echo    ____________________________
